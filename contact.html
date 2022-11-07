@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang = "EN-us">
+    <head>
+        <title>Lakes Aquarium</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+<!--Adding a functional contact page, where
+    users can fill out a form to contact the
+    aquarium 10/5/22-->
+    <div id="container">
+        <header>
+            <img src="images/lakes-aquarium-header.jpg" alt="lakes-aquarium">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Families</a></li>
+                <li><a href="#">Plan Your Visit</a></li>
+                <li><a href="#">Photos</a></li>
+                <li class="home"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1>Lakes Aquarium Contact Page</h1>
+        </div>
+        <div id="content">
+            <aside id="colOne">
+                <h2>Our Contact Information</h2>
+                <p>Phone Number:<br>&emsp;(800) 123-4567</p>
+                <p>Lakes Aquarium 1234<br>Lakeview Dr.<br>Des Moines, IA 50301<br><br><a href="http://onlineaquariums.org">Visit us online!</a></p>
+            </aside>
+            <section id="colTwo">
+                <h2>Your Contact Information</h2>
+                <form id="cookie-order" method="post" name="cookie-order" target="_blank" action="https://www.w3schools.com/action_page.php">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                    <div class="row input">
+                        <label style="padding-right: 85px">Suffix:</label>
+                        <div class="input">
+                            <input type="radio" name="title" value="Mr." id="Mr.">
+                            <label for="Mr.">Mr.</label>
+                        </div>
+                        <div class="input">
+                            <input type="radio" name="title" value="Ms." id="Ms.">
+                            <label for="Ms.">Ms.</label>
+                        </div>
+                        <div class="input">
+                            <input type="radio" name="title" value="Mrs." id="Mrs.">
+                            <label for="Mrs.">Mrs.</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input">
+                            <label class="leftLabel">First Name:</label>
+                            <input class="textInput" type="text" name="firstName" id="firstName" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input">
+                            <label class="leftLabel">Last Name:</label>
+                            <input class="textInput" type="text" name="lastName" id="lastName" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div>
+                        
+                        <div class="input">
+                            <label style="padding-right: 84px">Email:</label>
+                            <input class="textInput" type="text" name="email" id="email" placeholder="Your email address">
+                        </div>
+                    </div>
+                    <div>
+                        
+                        <div class="input">
+                            <label style="padding-right: 77px">Phone:</label>
+                            <input class="textInput" type="text" name="phone" id="phone" placeholder="999-999-9999">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label style="padding-right:5px">Preferred Contact:</label>
+                        <select name="contact" id="contact" size="1" class="textInput">
+                            <option value="1" selected disabled>Please Select</option>
+                            <option value="2">Phone</option>
+                            <option value="3">Text</option>
+                            <option value="4">Email</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label style="padding-right: 61px">Message:</label>
+                        <textarea id="message" name="message" row="2" cols="20" class="textInput" placeholder="Enter your message here."></textarea>
+                    </div>
+                    <div class="row" style="padding-left:150px">
+                        <input type="submit" value="Submit">
+                    </div>
+                    </fieldset>
+                </form>
+            </section>
+            
+        </div>
+        <footer>
+            <section id="footerNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Families</a></li>
+                    <li><a href="#">Plan Your Visit</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li class="home"><a href="contact.html">Contact</a></li>
+                </ul>
+            </section>
+            <section id="footerCopyright">
+                <ul>
+                    <li><span id="special">Copyright Lakes Aquarium</span></li>
+                </ul>
+            </section>
+            
+            
+        </footer>
+    </div> <!--end container-->
+    </body>
+</html>
+<!--Made by Malaki Jasper-->

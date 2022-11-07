@@ -1,0 +1,99 @@
+body{
+    background-image: url(images/site-bg.jpg);
+    background-repeat: repeat-x;
+    background-color: #5eb3f6;
+}
+#container{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    background-color: #FFF;
+    color: #333;
+    width: 900px;
+}
+header{
+    background-color: #036;
+    color: #f0f;
+    height: 220px;
+}
+#special{
+    background-color: #09f;
+}
+nav{
+    background-color: #09f;
+    height: 20px;
+    color: #fff;
+    padding: 5px;
+
+}
+/* make the links glow */
+nav ul, footer ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+}
+nav ul li, footer ul li{
+padding-right: 20px;
+}
+nav a{
+    color: #036;
+    text-decoration: none;
+}
+nav a:hover, footer a:hover{
+    color: white;
+    box-shadow: 3px 3px #036;
+}
+footer a{
+    color: #09F;
+}
+.home a{
+    color: white;
+}
+/* make the links glow */
+footer{
+    background-color: #036;
+    color: #fff;
+    padding: 15px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-size:18px;
+    color:#09F;
+}
+h2{
+    font-size:16px;
+    color:#036;
+}
+h3{
+    font-size:14px;
+    color:#333;
+}
+#content{
+    padding: 10px;
+    display: flex;
+}
+/* column widths */
+#colOne{
+    width:200px;
+}
+#colTwo{
+    width:680px;
+}
+#footerCopyright ul li{
+    padding-right:0;
+}
+table tr th{
+    background-color: #999;
+    padding: 5px;
+}
+table tr td{
+    border: 1px solid#999;
+    padding: 5px;
+    text-align: right;
+}
+ul.familyFun{
+    list-style-type: circle;
+}
+/*form format */

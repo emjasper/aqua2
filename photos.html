@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang = "EN-us">
+    <head>
+        <title>Lakes Aquarium</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="photos.css">
+    </head>
+    <body>
+<!--Adding a functional contact page, where
+    users can fill out a form to contact the
+    aquarium 10/5/22-->
+    <div id="container">
+        <header>
+            <img src="images/lakes-aquarium-header.jpg" alt="lakes-aquarium">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Families</a></li>
+                <li><a href="#">Plan Your Visit</a></li>
+                <li class="home"><a href="photos.html">Photos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="content">
+            <aside id="colOne">
+                <h2>Our Contact Information</h2>
+                <p>Phone Number:<br>&emsp;(800) 123-4567</p>
+                <p>Lakes Aquarium 1234<br>Lakeview Dr.<br>Des Moines, IA 50301<br><br><a href="http://onlineaquariums.org">Visit us online!</a></p>
+                <h2>Aquarium Hours</h2>
+                <table cellspacing="0">
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+                    <tr>
+                        <td>Mon</td>
+                        <td>10:00am - 8:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Tues</td>
+                        <td>10:00am - 8:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Wed</td>
+                        <td>10:00am - 8:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Thur</td>
+                        <td>10:00am - 8:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Fri</td>
+                        <td>10:00am - 8:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sat</td>
+                        <td>9:00am - 8:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sun</td>
+                        <td>12:00pm - 5:00pm</td>
+                    </tr>
+                    
+                </table>
+            </aside>
+            <section id="colTwo">
+                <h1>Lakes Aquarium Photos</h1>
+                <div class="row">
+                    <div class="column">
+                      <img src="images/parrot-fish.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                      <img src="images/clown-fish.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                      <img src="images/scr-fish.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/yellow-fish.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/jellyfish.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="column">
+                        <img src="images/nautilus-fish.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/discus-fish.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/seahorse.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                    </div>
+                </div>
+                    
+                    
+                </div>
+            
+            </section>
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="images/parrot-fish.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="images/clown-fish.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="images/scr-fish.jpg" style="width:100%">
+                  </div>
+                  
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="images/yellow-fish.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="images/jellyfish.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="images/nautilus-fish.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="images/discus-fish.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="images/seahorse.jpg" style="width:100%">
+                  </div>
+                  
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+              
+              
+                  <div class="column2">
+                    <img class="demo cursor" src="images/parrot-fish.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                  </div>
+                  <div class="column2">
+                    <img class="demo cursor" src="images/clown-fish.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+                  </div>
+                  <div class="column2">
+                    <img class="demo cursor" src="images/scr-fish.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                  </div>
+                  <div class="column2">
+                    <img class="demo cursor" src="images/yellow-fish.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                  </div>
+                  <div class="column2">
+                    <img class="demo cursor" src="images/jellyfish.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+                  </div>
+                  <div class="column2">
+                    <img class="demo cursor" src="images/nautilus-fish.jpg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+                  </div>
+                  <div class="column2">
+                    <img class="demo cursor" src="images/discus-fish.jpg" style="width:100%" onclick="currentSlide(7)" alt="Northern Lights">
+                  </div>
+                  <div class="column2">
+                    <img class="demo cursor" src="images/seahorse.jpg" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+        <footer>
+            <section id="footerNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="home"><a href="about.html">About</a></li>
+                    <li><a href="#">Families</a></li>
+                    <li><a href="#">Plan Your Visit</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </section>
+            <section id="footerCopyright">
+                <ul>
+                    <li><span id="special">Copyright Lakes Aquarium</span></li>
+                </ul>
+            </section>
+            
+            
+        </footer>
+    </div> <!--end container-->
+    <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+    </body>
+</html>
+<!--Made by Malaki Jasper-->
